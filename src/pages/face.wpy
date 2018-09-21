@@ -1,0 +1,41 @@
+<style lang="less">
+	
+</style>
+<template>
+	<view>
+		<Swiper></Swiper>
+	</view>
+	<view>123456</view>
+</template>
+<script>
+	import wepy from 'wepy'
+	import Swiper from '../components/swiper'
+
+	export default class Face extends wepy.page {
+		config = {
+			navigationBarTitleText:'官网首页',
+			navigationBarTextStyle:'blue',
+			navigationBarBackgroundColor:'#ff0000'
+		}
+
+		data = {
+			imgUrls:[
+				'../image/banner_1.png',
+				'../image/banner_jizhang.jpg'
+			],
+			indicatorDots:false,
+			autoplay:false,
+			interval:3000,
+			duration:1000
+		}
+
+		methods = {
+
+		}
+
+		components = {
+			Swiper
+		}
+
+	}
+</script>
